@@ -1,8 +1,8 @@
 {
   "name": "jobportal",
   "version": "0.1.0",
-  "homepage": "https://SHANKS0797.github.io/job-board",
-  "private": true,
+  "homepage": "https://shanks0797.github.io/job-board",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "gh-pages-deploy": "^0.5.1"
   }
 }
